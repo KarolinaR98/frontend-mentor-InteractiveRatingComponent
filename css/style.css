@@ -1,0 +1,117 @@
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+
+}
+
+body{
+    background-color: var(--very-dark-blue);
+}
+
+p{
+    font-size: 15px;
+}
+
+.container{
+    width: 370px;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-image: linear-gradient( to bottom, hsl(212, 18%, 14%), hsl(220, 16%, 11%) );
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.icon{
+    background-color: var(--dark-blue);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.header{
+    font-weight: 700;
+}
+
+.txt{
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.ratesHolder{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    transition: all .2s;
+}
+
+button.circle{
+    width: 45px;
+    height: 45px;
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 50%;
+    color: var(--light-grey);
+    font-weight: 700;
+    padding: 15px;
+}
+
+button.circle:hover{
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}
+
+button.circle:focus{
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+button.btnSubmit{
+    width: 100%;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    color: var(--very-dark-blue);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button.btnSubmit:hover{
+    background-color: var(--white);
+}
+
+.thankMessage{
+    text-align: center;
+}
+
+.phoneImage{
+    margin-bottom: 15px;
+}
+
+.summaryMsg{
+    display: inline-block;
+    background-color: var(--dark-blue);
+    padding: 10px 15px;
+    color: var(--orange);
+    border-radius: 30px;
+}
+
+.displayNone{
+    display: none;
+}
