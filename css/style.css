@@ -74,6 +74,7 @@ button.circle:hover{
     color: var(--dark-blue);
 }
 
+button.selected,
 button.circle:focus{
     background-color: var(--white);
     color: var(--dark-blue);

@@ -9,7 +9,15 @@ let rate = 0;
 
 ratingButtons.forEach(function (element) {
     element.onclick = function () {
+
+        let selected = document.querySelector(".selected");
+
+        if(selected){
+            selected.classList.remove("selected");
+        }
+
         rate = element.innerText;
+        element.classList.add("selected");
     }
 });
 
