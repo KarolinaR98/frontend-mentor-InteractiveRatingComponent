@@ -115,3 +115,11 @@ button.btnSubmit:hover{
 .displayNone{
     display: none;
 }
+
+@media (max-width: 375px){
+
+    .container{
+        width: 95%;
+        margin-top: 150px;
+    }
+}
